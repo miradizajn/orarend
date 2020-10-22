@@ -1,14 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <title>Órarend</title>
 </head>
 
 <body>
-    <!--itt kezdem a munkát-->
+    <h1>Órarend</h1>
+
+    <!--A Hét-->
+
+    <table id="a" class="center">
+        <caption><b>A</b></caption>
+        <thead>
+            <tr>
+                <td></td>
+                <td><b>Hétfő</b></td>
+                <td><b>Kedd</b></td>
+                <td><b>Szerda</b></td>
+                <td><b>Csütörtök</b></td>
+                <td><b>Péntek</b></td>
+            </tr>
+        </thead>
+        <tr>
+            <td>1</td>
+            <td>Irodalom</td>
+            <td>Angol</td>
+            <td rowspan="4">Inf. Táv</td>
+            <td>Fizika</td>
+            <td>Matematika</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Magyar</td>
+            <td>Testnevelés</td>
+            <td>Történelem</td>
+            <td>Angol</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td rowspan="2">DK</td>
+            <td>Irodalom</td>
+            <td rowspan="2">Angol</td>
+            <td>Történelem</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td rowspan="2">Matematika</td>
+            <td>Osztályfőnöki</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Matematika</td>
+            <td>IKT</td>
+            <td>Magyar</td>
+            <td>Testnevelés</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Történelem</td>
+            <td>Komplex</td>
+            <td rowspan="2">Prog.</td>
+            <td rowspan="2">Testnevelés</td>
+            <td rowspan="2">Komplex</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Fizika</td>
+            <td id="semmi"></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td id="semmi"></td>
+            <td id="semmi"></td>
+            <td id="semmi"></td>
+            <td id="semmi"></td>
+            <td id="semmi"></td>
+        </tr>
+    </table>
+
+    <!--B Hét-->
+
+    <table id="b" class="center">
+        <caption><b>B</b></caption>
+        <thead>
+            <tr>
+                <td></td>
+                <td><b>Hétfő</b></td>
+                <td><b>Kedd</b></td>
+                <td><b>Szerda</b></td>
+                <td><b>Csütörtök</b></td>
+                <td><b>Péntek</b></td>
+            </tr>
+        </thead>
+        <tr>
+            <td>1</td>
+            <td>Irodalom</td>
+            <td>Angol</td>
+            <td rowspan="2">Inf. Táv</td>
+            <td>Fizika</td>
+            <td>Matematika</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Magyar</td>
+            <td>Testnevelés</td>
+            <td>Történelem</td>
+            <td>Angol</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td rowspan="2">DK</td>
+            <td>Irodalom</td>
+            <td rowspan="2">Prog.</td>
+            <td rowspan="2">Angol</td>
+            <td>Történelem</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td rowspan="2">Matematika</td>
+            <td>Osztályfőnöki</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Matematika</td>
+            <td rowspan="2">Ikt</td>
+            <td>Magyar</td>
+            <td>Testnevelés</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Történelem</td>
+            <td id="semmi"></td>
+            <td rowspan="2">Testnevelés</td>
+            <td id="semmi"></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Fizika</td>
+            <td id="semmi"></td>
+            <td id="semmi"></td>
+            <td id="semmi"></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Munkaismeretek</td>
+            <td id="semmi"></td>
+            <td id="semmi"></td>
+            <td id="semmi"></td>
+            <td id="semmi"></td>
+        </tr>
+    </table>
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        #a,
+        #b,
+        th,
+        td {
+            border: 2px solid black;
+        }
+
+        #a {
+            width: 50%;
+        }
+
+        th {
+            height: 25px;
+        }
+
+        table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        #b {
+            width: 50%;
+        }
+
+        th {
+            height: 25px;
+        }
+
+        #semmi {
+            background-color: gray;
+        }
+    </style>
+
 </body>
 
 </html>
