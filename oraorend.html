@@ -6,7 +6,7 @@
     <title>Órarend</title>
     <style>
         table {
-            width: 90%;
+            width: 95%;
             margin: auto;
         }
 
@@ -28,7 +28,7 @@
         tbody {
             background-color: wheat;
             color: brown;
-         
+
         }
 
         tfoot {
@@ -54,20 +54,133 @@
 
 <body>
     <table>
-        
+        <caption>Heti órarend</caption>
+
         <thead>
-            <tr></tr>
-            <tr>Hétfő</tr>
-            <tr>Kedd</tr>
-            <tr>Szerda</tr>
-            <tr>Csütörtök</tr>
-            <tr>Péntek</tr>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2">Hétfő</th>
+                <th colspan="2">Kedd</th>
+                <th colspan="2">Szerda</th>
+                <th rowspan="2">Csütörtök</th>
+                <th colspan="2">Péntek</th>
+                <th rowspan="2"></th>
+            </tr>
+            <tr>
+                <th>A hét</th>
+                <th>B hét</th>
+                <th>A hét</th>
+                <th>B hét</th>
+                <th>A hét</th>
+                <th>B hét</th>
+                <th>A hét</th>
+                <th>B hét</th>
+            </tr>
         </thead>
         <tbody>
-            
+            <tr>
+                <th>1. óra</th>
+                <td>Irodlaom</td>
+<!--B hét-->        <td>Irodalom</td>
+                <td>Angol</td>
+<!--B hét-->        <td>Angol</td>
+                <td rowspan="4">Inf. Táv.</td>
+<!--B hét-->        <td rowspan="2">Inf. Táv.</td>
+                <td>Fizika</td>
+                <td>Matematika</td>
+<!--B hét-->        <td>Matematika</td>
+<th>8:30-9:10</th>
+            </tr>
+            <tr>
+                <th>2. óra</th>
+                <td>Angol</td>
+<!--B hét-->        <td>Magyar</td>
+                <td>Testnevelés</td>
+<!--B hét-->        <td>Testnevelés</td>
+                <td>Történelem</td>
+                <td>Angol</td>
+<!--B hét-->        <td>Angol</td>
+<th>9:20-10:00</th>
+            </tr>
+            <tr>
+                <th>3. óra</th>
+                <td rowspan="2">DK</td>
+<!--B hét-->        <td rowspan="2">DK</td>
+                <td>Irodalom</td>
+<!--B hét-->        <td>Irodalom</td>
+<!--B hét-->        <td rowspan="2">Programozás</td>
+                <td rowspan="2">Angol</td>
+                <td>Történelem</td>
+<!--B hét-->        <td>Történelem</td>
+<th>10:10-10:50</th>
+            </tr>
+            <tr>
+                <th>4. óra</th>
+                <td rowspan="2">Matematika</td>
+<!--B hét-->         <td rowspan="2">Matematika</td>
+                <td>Osztályfőnöki</td>
+<!--B hét-->        <td>Osztályfőnöki</td>
+<th>11:05-11:45</th>
+            </tr>
+            <tr>
+                <th>5. óra</th>
+                <td>Matematika</td>
+<!--B hét-->        <td>Matematika</td>
+                <td>IKT</td>
+<!--B hét-->        <td rowspan="2">IKT</td>
+                <td>Magyar</td>
+                <td>Testnevelés</td>
+<!--B hét-->        <td>Testnevelés</td>
+<th>11:55-12:35</th>
+            </tr>
+            <tr>
+                <th>6. óra</th>
+                <td>Történelem</td>
+<!--B hét-->        <td>Történelem</td>
+                <td>Komplex</td>
+<!--B hét-->        <td rowspan="2"></td>
+                <td rowspan="2">Programozás</td>
+                <td rowspan="2">Tesi</td>
+                <td rowspan="2">Komplex</td>
+                <td></td>
+<th>12:45-13:25</th>
+            </tr>
+            <tr>
+                <th>7. óra</th>
+                <td>Fizika</td>
+                    <td>Fizika</td>
+                <td></td>
+                <td></td>
+                <td></td>
+<th>13:30-14:10</th>
+            </tr>
+            <tr>
+                <th>8. óra</th>
+                <td></td>
+<!--B hét-->       <td>Munkaism.</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+<th>Digitális Oktatás</th>
+            </tr>
         </tbody>
         <tfoot>
-        
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2">Közismereti</th>
+                <th colspan="2">Közismereti</th>
+                <th colspan="2">Gyakorlati nap</th>
+                <th>Közismereti</th>
+                <th colspan="2">Közismereti</th>
+                <th rowspan="2"></th>
+            </tr>
+            <tr>
+                <th colspan="9">Mechwart András Gépipari és Informatikai Technikum</th>
+            </tr>
         </tfoot>
     </table>
 </body>
