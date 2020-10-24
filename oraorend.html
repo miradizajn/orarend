@@ -2,213 +2,74 @@
 <html lang="hu">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
     <title>Órarend</title>
+    <style>
+        table {
+            width: 90%;
+            margin: auto;
+        }
+
+        caption {
+            font-size: 2.5em;
+            background-color: darksalmon;
+            color: maroon;
+            border-radius: 15px;
+            box-shadow: lightgray 9px 12px;
+            width: 60%;
+            margin: 0.5cm auto 1em;
+        }
+
+        thead {
+            background-color: lightgreen;
+            color: darkslategray;
+        }
+
+        tbody {
+            background-color: wheat;
+            color: brown;
+         
+        }
+
+        tfoot {
+            background-color: lightskyblue;
+            color: blue;
+        }
+
+        th {
+            font-weight: bolder;
+            width: 11%;
+            height: 1.6em;
+            border: 2px solid red;
+            border-radius: 10px;
+        }
+
+        td {
+            height: 1cm;
+            text-align: center;
+            font-style: italic;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Órarend</h1>
-
-    <!--A Hét-->
-
-    <table id="a" class="center">
-        <caption><b>A</b></caption>
-        <thead>
-            <tr>
-                <td></td>
-                <td><b>Hétfő</b></td>
-                <td><b>Kedd</b></td>
-                <td><b>Szerda</b></td>
-                <td><b>Csütörtök</b></td>
-                <td><b>Péntek</b></td>
-            </tr>
-        </thead>
-        <tr>
-            <td>1</td>
-            <td>Irodalom</td>
-            <td>Angol</td>
-            <td rowspan="4">Inf. Táv</td>
-            <td>Fizika</td>
-            <td>Matematika</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Magyar</td>
-            <td>Testnevelés</td>
-            <td>Történelem</td>
-            <td>Angol</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td rowspan="2">DK</td>
-            <td>Irodalom</td>
-            <td rowspan="2">Angol</td>
-            <td>Történelem</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td rowspan="2">Matematika</td>
-            <td>Osztályfőnöki</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>Matematika</td>
-            <td>IKT</td>
-            <td>Magyar</td>
-            <td>Testnevelés</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>Történelem</td>
-            <td>Komplex</td>
-            <td rowspan="2">Prog.</td>
-            <td rowspan="2">Testnevelés</td>
-            <td rowspan="2">Komplex</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>Fizika</td>
-            <td id="semmi"></td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td id="semmi"></td>
-            <td id="semmi"></td>
-            <td id="semmi"></td>
-            <td id="semmi"></td>
-            <td id="semmi"></td>
-        </tr>
-    </table>
-
-    <!--B Hét-->
-
-    <table id="b" class="center">
-        <caption><b>B</b></caption>
-        <thead>
-            <tr>
-                <td></td>
-                <td><b>Hétfő</b></td>
-                <td><b>Kedd</b></td>
-                <td><b>Szerda</b></td>
-                <td><b>Csütörtök</b></td>
-                <td><b>Péntek</b></td>
-            </tr>
-        </thead>
-        <tr>
-            <td>1</td>
-            <td>Irodalom</td>
-            <td>Angol</td>
-            <td rowspan="2">Inf. Táv</td>
-            <td>Fizika</td>
-            <td>Matematika</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Magyar</td>
-            <td>Testnevelés</td>
-            <td>Történelem</td>
-            <td>Angol</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td rowspan="2">DK</td>
-            <td>Irodalom</td>
-            <td rowspan="2">Prog.</td>
-            <td rowspan="2">Angol</td>
-            <td>Történelem</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td rowspan="2">Matematika</td>
-            <td>Osztályfőnöki</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>Matematika</td>
-            <td rowspan="2">Ikt</td>
-            <td>Magyar</td>
-            <td>Testnevelés</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>Történelem</td>
-            <td id="semmi"></td>
-            <td rowspan="2">Testnevelés</td>
-            <td id="semmi"></td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>Fizika</td>
-            <td id="semmi"></td>
-            <td id="semmi"></td>
-            <td id="semmi"></td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td>Munkaismeretek</td>
-            <td id="semmi"></td>
-            <td id="semmi"></td>
-            <td id="semmi"></td>
-            <td id="semmi"></td>
-        </tr>
-    </table>
-
-    <style>
-        h1 {
-            text-align: center;
-        }
-
-        .center {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        table {
-            border-collapse: collapse;
-            text-align: center;
-        }
-
-        #a,
-        #b,
-        th,
-        td {
-            border: 2px solid black;
-        }
-
-        #a {
-            width: 50%;
-        }
-
-        th {
-            height: 25px;
-        }
-
-        table {
-            border-collapse: collapse;
-            text-align: center;
-        }
-
-        #b {
-            width: 50%;
-        }
-
-        th {
-            height: 25px;
-        }
-
-        #semmi {
-            background-color: gray;
-        }
-        caption {
-            font-size: 30px;
-        }
+    <table>
         
-        h1 {
-            font-size: 40px;
-        }
-
-    </style>
-
+        <thead>
+            <tr></tr>
+            <tr>Hétfő</tr>
+            <tr>Kedd</tr>
+            <tr>Szerda</tr>
+            <tr>Csütörtök</tr>
+            <tr>Péntek</tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+        <tfoot>
+        
+        </tfoot>
+    </table>
 </body>
 
 </html>
